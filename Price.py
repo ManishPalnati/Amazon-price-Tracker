@@ -32,15 +32,14 @@ def send_mail():
     server.starttls() 
     server.ehlo() 
      
-    server.login('rithwikponnam1869@gmail.com','rvozinrhpsoncfzo') 
+    server.login('manish30palnati@gmail.com','rvozinrhpsoncfzo') 
  
     subject = 'Price fell down!' 
     body = 'Check the amazon link https://www.amazon.in/generation-smart-speaker-powerful-Alexa/dp/B084KSRC9X/ref=sr_1_13?crid=1W0966MVIC07A&dib=eyJ2IjoiMSJ9.H75bGx4NvDWoLVAmp-SBBgUrAX6DaOKkhk1YjUuxaal_wwDMufanOdcbSqySGy33n3Lbbkk1xLEnpe9a82t7QMOYetW3MAhGA60MRKyMbay0MRWkZjOLQOdLmjmUMCdklv_CtTYKz46VRKWN8nR5OmFeEcpQkRTcOVTGDjHAbrDjGznmqJTeCnrCbrW41LSJSMz1SvSVKQIbmG9nQCMrukdnbJV0uTqGZ63VhJ6jdWA.jMYaVAU_OESSC8nkcZgf9mbXovK7hJn2DW6zmlZQSmk&dib_tag=se&keywords=echo+speaker&qid=1713704193&sprefix=echo+speake%2Caps%2C208&sr=8-13' 
      
     msg = f"Subject: {subject}\n\n{body}" 
     server.sendmail( 
-        'rithwikponnam1869@gmail.com', 
-        'rithwik1869@gmail.com', 
+        'manish30palnati@gmail.com',  
         msg 
     ) 
     print('HEY EMAIL HAS BEEN SENT!') 
@@ -51,3 +50,4 @@ while(True):
     check_price() 
     time.sleep(60*60) 
  
+
